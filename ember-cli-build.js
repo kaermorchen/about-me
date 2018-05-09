@@ -6,6 +6,10 @@ module.exports = function(defaults) {
   let app = new EmberApp(defaults, {
     'ember-cli-bootstrap-4': {
       js: null
+    },
+
+    'ember-mdi': {
+      icons: ['email-outline', 'skype-business', 'github-circle'],
     }
   });
 
