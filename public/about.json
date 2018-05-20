@@ -1,3 +1,115 @@
 {
-
+  "skills": {
+    "description": "I have many years experience as a front-end and back-end developer, creating websites, services, and single-page applications of a high quality.",
+    "data": {
+      "Front-end": {
+        "HTML": ["CSS", "SASS", "Bootstrap", "Foundation"],
+        "JS": ["Native", "jQuery", "Leaflet.js", "D3.js", "Lodash", "ect."],
+        "SPA": ["Ember.js", "Vue.js", "Backbone.js", "Mithril.js"],
+        "Tools": ["Node.js", "Babel", "ESLint", "Broccoli", "Gulp"],
+        "Tests": ["QUnit"]
+      },
+      "Back-end": {
+        "Languages": ["PHP", "Node.js", "Elixir"],
+        "CMS": ["Drupal 7"],
+        "Frameworks": ["Laravel", "Symfony", "Sails.js", "Phoenix"],
+        "Databases": ["MySQL (Percona)", "SQLite"],
+        "Other": ["Linux", "Nginx"]
+      }
+    }
+  },
+  "education": {
+    "description": "This is my general education. But I try to learn something new every day.",
+    "data": [
+      {
+        "name": "Engineer",
+        "organization": {
+          "name": "DON STATE TECHNICAL UNIVERSITY",
+          "site": "https://donstu.ru/en/"
+        },
+        "from": 2009,
+        "to": 2013,
+        "description": "Systems and Technologies"
+      },
+      {
+        "name": "Technician",
+        "organization": {
+          "name": "INSTITUTE OF SERVICE AND BUSINESS",
+          "site": "http://www.sssu.ru/Default.aspx?tabid=816"
+        },
+        "from": 2005,
+        "to": 2009,
+        "description": "Computers and Software"
+      }
+    ]
+  },
+  "experience": {
+    "description": null,
+    "data": [
+      {
+        "name": "Front-end developer",
+        "from": "May, 2017",
+        "to": "Present",
+        "description": "Developed a SPA on Ember.js",
+        "organization": {
+          "name": "Dekko Secure",
+          "site": "https://dekkosecure.com/"
+        }
+      },
+      {
+        "name": "Freelancer",
+        "from": "May, 2016",
+        "to": "May, 2017",
+        "description": "Designed and developed a lot of projects for my clients.",
+        "organization": null
+      },
+      {
+        "name": "Front-end developer",
+        "from": "Dec, 2015",
+        "to": "May, 2016",
+        "description": "Developed a SPA based on Ember.js",
+        "organization": {
+          "name": "Smartomato",
+          "site": "http://smartomato.ru/"
+        }
+      },
+      {
+        "name": "Freelancer",
+        "from": "Jul, 2013",
+        "to": "Dec, 2015",
+        "description": "Designed and developed a lot of projects for my clients.",
+        "organization": null
+      },
+      {
+        "name": "Software-engineer",
+        "from": "May, 2012",
+        "to": "Jul, 2013",
+        "description": "Designed and developed a monitoring system based on GPS/GLONASS systems and another map software.",
+        "organization": {
+          "name": "Selsoft",
+          "site": "http://selsoft.ru/"
+        }
+      },
+      {
+        "name": "Engineer-programmer",
+        "from": "Feb, 2010",
+        "to": "Feb, 2012",
+        "description": "Supported a website and a lot of software",
+        "organization": {
+          "name": "Treatment and rehabilitation center",
+          "site": "http://cpp-rnd.ru/"
+        }
+      },
+      {
+        "name": "System administrator",
+        "from": "Jun, 2008",
+        "to": "Aug, 2008",
+        "description": "Supported a lot of software.",
+        "organization": {
+          "name": "OJSC \"Shakhty factory Gidroprivod\"",
+          "site": "http://www.gidroprivod.ru/eng/"
+        }
+      }
+    ]
+  }
 }

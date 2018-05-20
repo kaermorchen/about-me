@@ -1,0 +1,10 @@
+<h4 class="pt-1">
+  {{@item.name}}
+  <a href={{@item.organization.site}} class="small" title={{@item.organization.name}} target="_blank">
+    {{if @item.organization.shortName @item.organization.shortName @item.organization.name}}
+  </a>
+</h4>
+<p>
+  {{@item.from}} - {{@item.to}}<br>
+  {{@item.description}}
+</p>

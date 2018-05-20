@@ -17,6 +17,7 @@
     "test": "ember test"
   },
   "devDependencies": {
+    "@ember/optional-features": "^0.5.2",
     "@mdi/svg": "^2.3.54",
     "bootstrap": "4.1.1",
     "broccoli-asset-rev": "^2.7.0",

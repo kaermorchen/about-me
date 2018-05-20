@@ -1,10 +1,9 @@
 <div class="container">
   <div class="row section">
     <div class="col-8">
-      <h1>I am Stanislav Romanov</h1>
-      <p>I am a Web Developer located in Rostov-on-Don, Russia. I currently work as a freelancer.</p>
-      <p>I have {{experienceYears}} years commercial experience working with clients from around the world.</p>
-      <div class="mb-1">Email: kaermorchen@gmail.com</div>
+      <h1 class="mb-5">I am Stanislav Romanov</h1>
+      <p class="mb-5">I am a Web Developer located in Rostov-on-Don, Russia. I currently work as a freelancer. I have {{experienceYears}} years commercial experience working with clients from around the world.</p>
+      <div class="mb-1">Email: kaermorchen at gmail dot com</div>
       <div class="mb-1">Skype: romanov.s.u</div>
       <div class="mb-1 d-flex align-items-center">Social:
         <a href="https://github.com/kaermorchen" target="_blank" alt="Github account" title="Github account" class="d-inline-flex align-items-center">{{mdi-icon "github-circle" class="ml-1"}}</a>
@@ -18,120 +17,46 @@
   <div class="row section">
     <div class="col-4">
       <h2>Skills</h2>
-      <p>I have many years experience as a front-end and back-end developer, creating websites, services, and single-page applications of a high quality.</p>
+      <p>{{model.skills.description}}</p>
     </div>
 
-    <div class="col-4">
-      <h3 class="pt-1">Front-end</h3>
-      <p class="mb-0">
-        HTML: CSS, SASS, Bootstrap, Foundation<br>
-        JS: Native, jQuery, Leaflet.js, D3.js, Lodash, ect.<br>
-        SPA: Ember.js, Vue.js, Backbone.js, Mithril.js<br>
-        Tools: Node.js, Babel, ESLint, Broccoli, Gulp<br>
-        Tests: QUnit
-      </p>
-    </div>
-
-    <div class="col-4">
-      <h3 class="pt-1">Back-end</h3>
-      <p class="mb-0">
-        Languages: PHP, Node.js, Elixir<br>
-        CMS: Drupal 7<br>
-        Frameworks: Laravel, Symfony 2, Sails.js, Phoenix<br>
-        Databases: MySQL (Percona), SQLite<br>
-        Other: Linux, Nginx
-      </p>
-    </div>
+    {{#each-in model.skills.data as |scopeName scope|}}
+      <div class="col-4">
+        <h3 class="pt-1">{{scopeName}}</h3>
+        <p class="mb-0">
+          {{#each-in scope as |skillName skills|}}
+            {{skillName}}:
+            {{#each skills as |skill index|}}{{if index ", "}}{{skill}}{{/each}}
+            <br>
+          {{/each-in}}
+        </p>
+      </div>
+    {{/each-in}}
   </div>
 
   <div class="row section">
     <div class="col-4">
       <h2>Education</h2>
-      <p>This is my general education. But I try to learn something new every day.</p>
+      <p>{{model.education.description}}</p>
     </div>
 
     <div class="col-8">
-      <h4 class="pt-1"><a href="https://donstu.ru/en/">DON STATE TECHNICAL UNIVERSITY</a></h4>
-      <p>
-        2009 - 2013<br>
-        Engineer. Systems and Technologies
-      </p>
-
-      <h4 class="pt-1"><a href="http://www.sssu.ru/Default.aspx?tabid=816">INSTITUTE OF SERVICE AND BUSINESS</a></h4>
-      <p class="mb-0">
-        2005 — 2009<br>
-        Technician. Computers and Software
-      </p>
+      {{#each model.education.data as |item|}}
+        {{cv-item item=item}}
+      {{/each}}
     </div>
   </div>
 
   <div class="row section">
     <div class="col-4">
       <h2>Experience</h2>
-      <p>Lorem ipsum</p>
+      <p>{{model.experience.description}}</p>
     </div>
 
     <div class="col-8">
-      <h4 class="pt-1">
-        Front-end developer
-        <a href="https://dekkosecure.com/" class="small">Dekko Secure</a>
-      </h4>
-      <p>
-        May, 2017 — Present<br>
-        Developed a SPA on Ember.js
-      </p>
-
-      <h4 class="pt-1">
-        Freelancer
-      </h4>
-      <p>
-        May, 2016 — May, 2017<br>
-        Designed and developed a lot of projects for my clients.
-      </p>
-
-      <h4 class="pt-1">
-        Front-end developer
-        <a href="http://smartomato.ru/" class="small">Smartomato</a>
-      </h4>
-      <p>
-        Dec, 2015 — May, 2016<br>
-        Developed a SPA based on Ember.js
-      </p>
-
-      <h4 class="pt-1">
-        Freelancer
-      </h4>
-      <p>
-        Jul, 2013 — Dec, 2015<br>
-        Designed and developed a lot of projects for my clients.
-      </p>
-
-      <h4 class="pt-1">
-        Software-engineer
-        <a href="http://selsoft.ru/" class="small">Selsoft</a>
-      </h4>
-      <p>
-        May, 2012 — Jul, 2013<br>
-        Designed and developed a monitoring system based on GPS/GLONASS systems and another map software.
-      </p>
-
-      <h4 class="pt-1">
-        Engineer-programmer
-        <a href="http://cpp-rnd.ru/" class="small">Treatment and rehabilitation center</a>
-      </h4>
-      <p>
-        Feb, 2010 — Feb, 2012<br>
-        Supported a website and a lot of software.
-      </p>
-
-      <h4 class="pt-1">
-        System administrator
-        <a href="http://www.gidroprivod.ru/eng/" class="small">OJSC "Shakhty factory Gidroprivod"</a>
-      </h4>
-      <p>
-        Jun, 2008 — Aug, 2008<br>
-        Supported a lot of software.
-      </p>
+      {{#each model.experience.data as |item|}}
+        {{cv-item item=item}}
+      {{/each}}
     </div>
   </div>
 </div>
