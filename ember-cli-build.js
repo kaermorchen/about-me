@@ -15,7 +15,16 @@ module.exports = function(defaults) {
     }
   });
 
-  let worksJson = new StaticSiteJson('work');
+  let projectsJson = new StaticSiteJson('data/projects', {
+    attributes: ['title', 'url', 'created_at', 'client', 'client_url', 'logo', 'screenshots', 'tags'],
+    contentTypes: ['html'],
+    contentFolder: 'data/projects',
+    type: 'projects',
+    collections: [{
+      src: `data/projects`,
+      output: `all.json`,
+    }]
+  });
 
-  return new BroccoliMergeTrees([app.toTree(), worksJson]);
+  return new BroccoliMergeTrees([app.toTree(), projectsJson]);
 };

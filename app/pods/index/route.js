@@ -1,10 +1,18 @@
 import { inject as service } from '@ember/service';
 import Route from '@ember/routing/route';
+import RSVP from 'rsvp';
 
 export default Route.extend({
   request: service(),
 
   model() {
-    return this.get('request').fetch('/about.json').then(response => response.json());
+    return RSVP.hash({
+      model: this.get('request').fetch('/about.json').then(response => response.json()),
+      projects: this.get('store').findAll('project')
+    });
+  },
+
+  setupController(controller, hash) {
+    controller.setProperties(hash);
   }
 });
