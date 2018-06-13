@@ -1,5 +1,5 @@
 ---
-title: Dekko
+name: Dekko
 url: https://dekko.io/
 created-at: 2018-06-15
 client: DekkoSecure

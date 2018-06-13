@@ -7,7 +7,7 @@
 @import "ember-cli-bootstrap-4/root";
 @import "ember-cli-bootstrap-4/reboot";
 @import "ember-cli-bootstrap-4/type";
-// @import "ember-cli-bootstrap-4/images";
+@import "ember-cli-bootstrap-4/images";
 // @import "ember-cli-bootstrap-4/code";
 @import "ember-cli-bootstrap-4/grid";
 // @import "ember-cli-bootstrap-4/tables";
@@ -36,6 +36,8 @@
 // @import "ember-cli-bootstrap-4/carousel";
 @import "ember-cli-bootstrap-4/utilities";
 // @import "ember-cli-bootstrap-4/print";
+
+@import "pod-styles";
 
 $border: solid $border-width $border-color;
 
