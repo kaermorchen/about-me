@@ -16,7 +16,7 @@ module.exports = function(defaults) {
   });
 
   let projectsJson = new StaticSiteJson('data/projects', {
-    attributes: ['name', 'url', 'created_at', 'client', 'client_url', 'logo', 'screenshots', 'tags'],
+    attributes: ['name', 'type', 'url', 'created_at', 'client', 'client_url', 'logo', 'screenshots', 'tags'],
     contentTypes: ['html'],
     contentFolder: 'data/projects',
     type: 'projects',
