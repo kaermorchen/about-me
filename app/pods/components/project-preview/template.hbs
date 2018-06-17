@@ -2,10 +2,10 @@
   <img src={{project.logo}} alt={{project.name}} class="img-fluid">
 </div>
 
-<div class="row align-items-center mb-3">
-  <div class="col-3">{{project.type}}</div>
+<div class="row align-items-end mb-3">
+  <div class="col-3 text-secondary small">{{project.type}}</div>
   <div class="col text-center">
     <h4 class="mb-0">{{project.name}}</h4>
   </div>
-  <div class="col-3 text-right">{{format-date project.createdAt}}</div>
+  <div class="col-3 text-right text-secondary small">{{format-date project.createdAt "YYYY"}}</div>
 </div>

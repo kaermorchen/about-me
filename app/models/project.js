@@ -6,7 +6,7 @@ export default DS.Model.extend({
   type: attr('string'),
   html: attr('string'),
   url: attr('string'),
-  createdAt: attr(),
+  createdAt: attr('date'),
   client: attr('string'),
   clientUrl: attr('string'),
   logo: attr('string'),

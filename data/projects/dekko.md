@@ -2,9 +2,9 @@
 name: Dekko
 type: Web app
 url: https://dekko.io/
-created-at: 2018-06-15
+createdAt: 2018-06-15
 client: DekkoSecure
-client-url: https://dekkosecure.com/
+clientUrl: https://dekkosecure.com/
 logo: /assets/images/projects/dekko_logo.png
 screenshots: 
   - /assets/images/projects/dekko_1.png

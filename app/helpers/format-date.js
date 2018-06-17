@@ -1,9 +1,9 @@
 import { helper } from '@ember/component/helper';
-import format from 'npm:date-fns/format';
+import format from 'date-fns/format';
 
 export function formatDate([date, dateFormat]) {
   if (!dateFormat) {
-    dateFormat = 'DD.MM.YYYY';
+    dateFormat = 'dd.MM.YYYY';
   }
 
   return format(date, dateFormat);
