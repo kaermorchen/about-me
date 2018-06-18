@@ -1,1 +1,5 @@
-{{outlet}}
+<div class="row section">
+  {{#each model as |project|}}
+    {{project-preview project=project class="col-4"}}
+  {{/each}}
+</div>

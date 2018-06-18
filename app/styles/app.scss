@@ -44,4 +44,8 @@ $border: solid $border-width $border-color;
 .section {
   padding: map-get($spacers, 5) 0;
   border-bottom: $border;
+
+  &:last-child {
+    border-bottom: none;
+  }
 }

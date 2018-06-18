@@ -7,5 +7,11 @@ export default DS.JSONAPIAdapter.extend({
     const url = this._super(...arguments);
 
     return `${url}/all.json`;
+  },
+
+  urlForFindRecord() {
+    const url = this._super(...arguments);
+
+    return `${url}.json`;
   }
 });
