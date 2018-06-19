@@ -1,1 +1,37 @@
-{{outlet}}
+<div class="row section">
+  <div class="col-8">
+    <img src={{model.screenshots.firstObject}} alt={{model.name}} class="img-fluid">
+  </div>
+
+  <div class="col-4">
+    <h1 class="mb-3">{{model.name}}</h1>
+
+    <dl class="row">
+      <dt class="col-sm-3">Type</dt>
+      <dd class="col-sm-9">{{model.type}}</dd>
+
+      <dt class="col-sm-3">Year</dt>
+      <dd class="col-sm-9">{{format-date model.createdAt "YYYY"}}</dd>
+
+      {{#if model.url}}
+        <dt class="col-sm-3">Link</dt>
+        <dd class="col-sm-9">
+          <a href={{model.url}} target="_blank">{{model.url}}</a>
+        </dd>
+      {{/if}}
+
+      {{#if model.client}}
+        <dt class="col-sm-3">Customer</dt>
+        <dd class="col-sm-9">
+          {{#if model.clientUrl}}
+            <a href={{model.clientUrl}} target="_blank">{{model.clientUrl}}</a>
+          {{else}}
+            {{model.client}}
+          {{/if}}
+        </dd>
+      {{/if}}
+    </dl>
+
+    {{{model.html}}}
+  </div>
+</div>
