@@ -46,10 +46,12 @@
     "ember-load-initializers": "^1.1.0",
     "ember-maybe-import-regenerator": "^0.1.6",
     "ember-mdi": "^0.4.6",
+    "ember-photoswipe": "^0.4.1",
     "ember-resolver": "^4.5.5",
     "ember-source": "~3.1.1",
     "eslint-plugin-ember": "^5.1.0",
-    "loader.js": "^4.7.0"
+    "loader.js": "^4.7.0",
+    "photoswipe": "^4.1.2"
   },
   "engines": {
     "node": "6.* || >= 8.*"
