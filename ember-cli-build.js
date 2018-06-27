@@ -21,8 +21,8 @@ module.exports = function(defaults) {
     contentFolder: 'data/projects',
     type: 'projects',
     collections: [{
-      src: `data/projects`,
-      output: `all.json`,
+      src: 'data/projects',
+      output: 'all.json',
     }]
   });
 

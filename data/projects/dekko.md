@@ -6,7 +6,7 @@ createdAt: 2018-06-15
 client: DekkoSecure
 clientUrl: https://dekkosecure.com/
 logo: /assets/images/projects/dekko_logo.png
-screenshots: 
+screenshots:
   - /assets/images/projects/dekko_1.png
   - /assets/images/projects/dekko_2.png
   - /assets/images/projects/dekko_3.png
