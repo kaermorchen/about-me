@@ -1,5 +1,7 @@
-<div class="row section">
+<h1 class="mt-3">Portfolio</h1>
+
+<div class="row">
   {{#each model as |project|}}
-    {{project-preview project=project class="col-4"}}
+    {{project-preview project=project class="col-4 mb-3"}}
   {{/each}}
 </div>

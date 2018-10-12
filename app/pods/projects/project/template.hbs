@@ -1,7 +1,7 @@
 <div class="row section">
   <div class="col-8">
     {{#photo-swipe items=model.images history=false shareEl=false as |photoswipe|}}
-      <img src={{model.screenshots.firstObject}} {{action photoswipe.actions.open}} class="img-fluid" />
+      <img src={{model.screenshots.firstObject}} onclick={{action photoswipe.actions.open}} class="img-fluid" />
     {{/photo-swipe}}
   </div>
 
