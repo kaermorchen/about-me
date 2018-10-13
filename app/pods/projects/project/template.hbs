@@ -1,8 +1,12 @@
 <div class="row section">
   <div class="col-8">
-    {{#photo-swipe items=model.images history=false shareEl=false as |photoswipe|}}
-      <img src={{model.screenshots.firstObject}} onclick={{action photoswipe.actions.open}} class="img-fluid" />
-    {{/photo-swipe}}
+    {{#swiper-container}}
+      {{#each model.screenshots as |item|}}
+        {{#swiper-slide}}
+          <img src={{item}} class="img-fluid" />
+        {{/swiper-slide}}
+      {{/each}}
+    {{/swiper-container}}
   </div>
 
   <div class="col-4">
