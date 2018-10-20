@@ -1,12 +1,12 @@
 <div class="row section">
   <div class="col-8">
-    {{#swiper-container}}
-      {{#each model.screenshots as |item|}}
-        {{#swiper-slide}}
-          <img src={{item}} class="img-fluid" />
-        {{/swiper-slide}}
-      {{/each}}
-    {{/swiper-container}}
+    {{#photo-swipe items=model.images history=false shareEl=false as |photoswipe|}}
+      {{#siema-carousel as |siema|}}
+        {{#each model.screenshots as |item index|}}
+          <img src={{item}} class="img-fluid" onclick={{action siema.actions.openPhotoswipe photoswipe index}} />
+        {{/each}}
+      {{/siema-carousel}}
+    {{/photo-swipe}}
   </div>
 
   <div class="col-4">

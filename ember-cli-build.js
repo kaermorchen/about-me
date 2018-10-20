@@ -26,5 +26,7 @@ module.exports = function(defaults) {
     }]
   });
 
+  app.import('node_modules/siema/dist/siema.min.js');
+
   return new BroccoliMergeTrees([app.toTree(), projectsJson]);
 };
