@@ -1,12 +1,17 @@
 <div class="row section">
   <div class="col-8">
-    {{#photo-swipe items=model.images history=false shareEl=false as |photoswipe|}}
-      {{#siema-carousel as |siema|}}
+    {{#photo-swipe items=model.images history=false shareEl=false class="mb-3" as |photoswipe|}}
+      {{#siema-carousel currentSlide=currentSlide as |siema|}}
         {{#each model.screenshots as |item index|}}
           <img src={{item}} class="img-fluid" onclick={{action siema.actions.openPhotoswipe photoswipe index}} />
         {{/each}}
       {{/siema-carousel}}
     {{/photo-swipe}}
+    <div class="d-flex items-align-center justify-content-center">
+      {{#each model.screenshots as |item index|}}
+        {{mdi-icon (if (eq currentSlide index) "checkbox-blank-circle" "checkbox-blank-circle-outline")  size=14 class="fill-gray-500 cursor-pointer" click=(action (mut currentSlide) index)}}
+      {{/each}}
+    </div>
   </div>
 
   <div class="col-4">

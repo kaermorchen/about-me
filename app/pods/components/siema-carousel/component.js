@@ -11,12 +11,19 @@ export default Component.extend({
     });
   },
 
+  didReceiveAttrs() {
+    if (this.instance) {
+      this.instance.goTo(this.currentSlide);
+    }
+  },
+
   didInsertElement() {
     this._super(...arguments);
 
     const instance = new Siema({
       selector: this.element,
       onChange: bind(this, this.onChange),
+      startIndex: this.currentSlide
     });
 
     this.set('instance', instance);
@@ -29,6 +36,7 @@ export default Component.extend({
   },
 
   onChange() {
+    this.set('currentSlide', this.instance.currentSlide);
     this.set('isDragged', true);
 
     next(this, function () {

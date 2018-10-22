@@ -54,3 +54,11 @@ $border: solid $border-width $border-color;
 dd {
   margin-bottom: 0;
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}
+
+.fill-gray-500 {
+  fill: $gray-500;
+}
