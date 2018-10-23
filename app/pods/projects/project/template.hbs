@@ -7,11 +7,13 @@
         {{/each}}
       {{/siema-carousel}}
     {{/photo-swipe}}
-    <div class="d-flex items-align-center justify-content-center">
-      {{#each model.screenshots as |item index|}}
-        {{mdi-icon (if (eq currentSlide index) "checkbox-blank-circle" "checkbox-blank-circle-outline")  size=14 class="fill-gray-500 cursor-pointer" click=(action (mut currentSlide) index)}}
-      {{/each}}
-    </div>
+    {{#if (gt model.screenshots.length 1)}}
+      <div class="d-flex items-align-center justify-content-center">
+        {{#each model.screenshots as |item index|}}
+          {{mdi-icon (if (eq currentSlide index) "checkbox-blank-circle" "checkbox-blank-circle-outline")  size=14 class="fill-gray-500 cursor-pointer" click=(action (mut currentSlide) index)}}
+        {{/each}}
+      </div>
+    {{/if}}
   </div>
 
   <div class="col-4">
