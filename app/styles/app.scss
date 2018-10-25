@@ -59,6 +59,22 @@ dd {
   cursor: pointer;
 }
 
+.cursor-zoom-in {
+  cursor: zoom-in;
+}
+
 .fill-gray-500 {
   fill: $gray-500;
+}
+
+.fill-white {
+  fill: $white;
+}
+
+.zoom-in {
+  position: absolute;
+  top: map-get($spacers, 3);
+  right: map-get($spacers, 3);
+  fill: $white;
+  background-color: $primary;
 }

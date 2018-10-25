@@ -1,19 +1,9 @@
 <div class="row section">
   <div class="col-8">
-    {{#photo-swipe items=model.images history=false shareEl=false class="mb-3" as |photoswipe|}}
-      {{#siema-carousel currentSlide=currentSlide as |siema|}}
-        {{#each model.screenshots as |item index|}}
-          <img src={{item}} class="img-fluid" onclick={{action siema.actions.openPhotoswipe photoswipe index}} />
-        {{/each}}
-      {{/siema-carousel}}
+    {{#photo-swipe items=model.images history=false shareEl=false class="mb-3 position-relative" as |photoswipe|}}
+      <img src={{model.screenshots.firstObject}} class="img-fluid cursor-zoom-in" onclick={{action photoswipe.actions.open}} />
+      {{mdi-icon "magnify-plus-outline" size=30 class="zoom-in" click=(action photoswipe.actions.open)}}
     {{/photo-swipe}}
-    {{#if (gt model.screenshots.length 1)}}
-      <div class="d-flex items-align-center justify-content-center">
-        {{#each model.screenshots as |item index|}}
-          {{mdi-icon (if (eq currentSlide index) "checkbox-blank-circle" "checkbox-blank-circle-outline")  size=14 class="fill-gray-500 cursor-pointer" click=(action (mut currentSlide) index)}}
-        {{/each}}
-      </div>
-    {{/if}}
   </div>
 
   <div class="col-4">

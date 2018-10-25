@@ -11,7 +11,7 @@ module.exports = function(defaults) {
     },
 
     'ember-mdi': {
-      icons: ['email-outline', 'skype-business', 'github-circle', 'checkbox-blank-circle', 'checkbox-blank-circle-outline'],
+      icons: ['email-outline', 'skype-business', 'github-circle', 'checkbox-blank-circle', 'checkbox-blank-circle-outline', 'magnify-plus-outline'],
     }
   });
 
