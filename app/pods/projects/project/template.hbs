@@ -1,6 +1,6 @@
 <div class="row section">
   <div class="col-8">
-    {{#photo-swipe items=model.images history=false shareEl=false class="mb-3 position-relative" as |photoswipe|}}
+    {{#photo-swipe items=model.images history=false shareEl=false class="mb-3 position-relative border" as |photoswipe|}}
       <img src={{model.screenshots.firstObject}} class="img-fluid cursor-zoom-in" onclick={{action photoswipe.actions.open}} />
       {{mdi-icon "magnify-plus-outline" size=30 class="zoom-in" click=(action photoswipe.actions.open)}}
     {{/photo-swipe}}
