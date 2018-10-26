@@ -6,10 +6,4 @@ export default Route.extend({
       into: 'application',
     });
   },
-
-  resetController(controller, isExiting, transition) {
-    if (isExiting && transition.targetName !== 'error') {
-      controller.set('currentSlide', 0);
-    }
-  }
 });
