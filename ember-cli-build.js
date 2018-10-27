@@ -12,6 +12,10 @@ module.exports = function(defaults) {
 
     'ember-mdi': {
       icons: ['email-outline', 'skype-business', 'github-circle', 'checkbox-blank-circle', 'checkbox-blank-circle-outline', 'magnify-plus-outline'],
+    },
+
+    'ember-composable-helpers': {
+      only: ['toggle', 'toggle-action']
     }
   });
 
