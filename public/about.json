@@ -47,9 +47,16 @@
     "description": null,
     "data": [
       {
+        "name": "Freelancer",
+        "from": "October, 2018",
+        "to": "Present",
+        "description": "Designed and developed a lot of projects for my clients",
+        "organization": null
+      },
+      {
         "name": "Front-end developer",
         "from": "May, 2017",
-        "to": "Present",
+        "to": "October, 2018",
         "description": "Developed a SPA on Ember.js",
         "organization": {
           "name": "Dekko Secure",
@@ -57,11 +64,14 @@
         }
       },
       {
-        "name": "Freelancer",
-        "from": "May, 2016",
+        "name": "Front-end developer",
+        "from": "October, 2016",
         "to": "May, 2017",
-        "description": "Designed and developed a lot of projects for my clients.",
-        "organization": null
+        "description": "Designed and developed four SPA",
+        "organization": {
+          "name": "Telecan",
+          "site": "http://telecan.ru/"
+        }
       },
       {
         "name": "Front-end developer",
@@ -77,14 +87,14 @@
         "name": "Freelancer",
         "from": "Jul, 2013",
         "to": "Dec, 2015",
-        "description": "Designed and developed a lot of projects for my clients.",
+        "description": "Designed and developed a lot of projects for my clients",
         "organization": null
       },
       {
         "name": "Software-engineer",
         "from": "May, 2012",
         "to": "Jul, 2013",
-        "description": "Designed and developed a monitoring system based on GPS/GLONASS systems and another map software.",
+        "description": "Designed and developed a monitoring system based on GPS/GLONASS systems and another map software",
         "organization": {
           "name": "Selsoft",
           "site": "http://selsoft.ru/"
@@ -104,7 +114,7 @@
         "name": "System administrator",
         "from": "Jun, 2008",
         "to": "Aug, 2008",
-        "description": "Supported a lot of software.",
+        "description": "Supported a lot of software",
         "organization": {
           "name": "OJSC \"Shakhty factory Gidroprivod\"",
           "site": "http://www.gidroprivod.ru/eng/"
