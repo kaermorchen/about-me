@@ -1,8 +1,25 @@
 <div class="row section">
   <div class="col-8">
-    {{#photo-swipe items=model.images history=false shareEl=false class="mb-3 position-relative border" as |photoswipe|}}
-      <img src={{model.screenshots.firstObject}} class="img-fluid cursor-zoom-in" onclick={{action photoswipe.actions.open}} />
-      {{mdi-icon "magnify-plus-outline" size=30 class="zoom-in" click=(action photoswipe.actions.open)}}
+    {{#photo-swipe
+      items=model.images
+      class="mb-3 position-relative border"
+      history=false
+      shareEl=false
+    as |photoswipe|
+    }}
+      <img
+        src={{model.screenshots.firstObject}}
+        class="img-fluid cursor-zoom-in"
+        role="button"
+        onclick={{action photoswipe.actions.open}}
+        alt=""
+      >
+      {{mdi-icon
+        "magnify-plus-outline"
+        size=30
+        class="zoom-in"
+        click=(action photoswipe.actions.open)
+      }}
     {{/photo-swipe}}
   </div>
 
@@ -19,7 +36,7 @@
       {{#if model.url}}
         <dt class="col-sm-3">Link</dt>
         <dd class="col-sm-9">
-          <a href={{model.url}} target="_blank">{{model.url}}</a>
+          <a href={{model.url}} target="_blank" rel="noopener">{{model.url}}</a>
         </dd>
       {{/if}}
 
@@ -27,7 +44,7 @@
         <dt class="col-sm-3">Customer</dt>
         <dd class="col-sm-9">
           {{#if model.clientUrl}}
-            <a href={{model.clientUrl}} target="_blank">{{model.clientUrl}}</a>
+            <a href={{model.clientUrl}} target="_blank" rel="noopener">{{model.clientUrl}}</a>
           {{else}}
             {{model.client}}
           {{/if}}
@@ -35,6 +52,6 @@
       {{/if}}
     </dl>
 
-    {{{model.html}}}
+    {{model.html}}
   </div>
 </div>

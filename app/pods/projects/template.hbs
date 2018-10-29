@@ -3,7 +3,12 @@
 <div class="mb-3">
   Filters:
   {{#each tags as |tag|}}
-    <span class="badge {{if tag.selected "badge-primary" "badge-light"}} cursor-pointer" onclick={{toggle-action "selected" tag}}>{{tag.name}}</span>
+    <span
+      class="badge {{if tag.selected "badge-primary" "badge-light"}} cursor-pointer"
+      onclick={{toggle-action "selected" tag}}
+    >
+      {{tag.name}}
+    </span>
   {{/each}}
 </div>
 
