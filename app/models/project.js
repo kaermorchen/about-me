@@ -1,6 +1,7 @@
 import DS from 'ember-data';
 import attr from 'ember-data/attr';
 import { computed, setProperties } from '@ember/object';
+import { htmlSafe } from '@ember/string';
 
 export default DS.Model.extend({
   name: attr('string'),
@@ -37,4 +38,8 @@ export default DS.Model.extend({
 
     return images;
   }),
+
+  safetyHtml: computed('html', function() {
+    return htmlSafe(this.html);
+  })
 });
