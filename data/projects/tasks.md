@@ -14,4 +14,4 @@ tags:
   - Ember.js
 ---
  
-Designed and developed a SPA
+Designed and developed a SPA based on Ember.js

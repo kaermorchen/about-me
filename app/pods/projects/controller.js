@@ -16,8 +16,6 @@ export default Controller.extend({
       return projects;
     }
 
-    return projects.filter(project => {
-      return project.tags.some(v => tagNames.includes(v));
-    });
+    return projects.filter(project => project.tags.some(v => tagNames.includes(v))).sortBy('createdAt');
   })
 });

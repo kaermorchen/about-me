@@ -2,7 +2,7 @@
 name: Dekko
 type: Web app
 url: https://dekko.io/
-createdAt: 2018-06-15
+createdAt: 2018-10-15
 client: DekkoSecure
 clientUrl: https://dekkosecure.com/
 logo: /assets/images/projects/dekko_logo.png
@@ -16,4 +16,4 @@ tags:
   - Ember.js
 ---
 
-Developed a SPA
+Developed a SPA based on Ember.js
