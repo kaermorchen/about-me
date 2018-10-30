@@ -1,9 +1,6 @@
 import Route from '@ember/routing/route';
+import { readOnly } from '@ember/object/computed';
 
 export default Route.extend({
-  renderTemplate() {
-    this.render('projects.project', {
-      into: 'application',
-    });
-  },
+  breadcrumbTitle: readOnly('controller.model.name'),
 });

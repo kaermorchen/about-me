@@ -1,0 +1,20 @@
+{{#each breadcrumbs.filteredRoutes as |route|}}
+  {{#if route.breadcrumbTitle}}
+    <li class="breadcrumb-item">
+      {{#if
+        (and
+          route.breadcrumbPath
+          (not-eq route breadcrumbs.filteredRoutes.lastObject)
+        )
+      }}
+        {{link-to
+          route.breadcrumbTitle
+          route.breadcrumbPath
+          title=route.breadcrumbTitle
+        }}
+      {{else}}
+        {{route.breadcrumbTitle}}
+      {{/if}}
+    </li>
+  {{/if}}
+{{/each}}
