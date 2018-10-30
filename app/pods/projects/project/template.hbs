@@ -20,7 +20,13 @@
         <dt class="col-sm-3">Customer</dt>
         <dd class="col-sm-9">
           {{#if model.clientUrl}}
-            <a href={{model.clientUrl}} target="_blank" rel="noopener">{{model.clientUrl}}</a>
+            <a href={{model.clientUrl}} target="_blank" rel="noopener">
+              {{if
+                model.client
+                model.client
+                model.clientUrl
+              }}
+            </a>
           {{else}}
             {{model.client}}
           {{/if}}
