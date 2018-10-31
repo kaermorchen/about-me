@@ -1,25 +1,27 @@
 import Route from '@ember/routing/route';
-import { readOnly } from '@ember/object/computed';
 import { inject as service } from '@ember/service';
 
 export function initialize() {
   Route.reopen({
-    breadcrumbs: service(),
+    router: service(),
 
-    breadcrumbTitle: null,
-    breadcrumbPath: readOnly('routeName'),
+    breadcrumb: null,
 
     activate() {
       this._super(...arguments);
 
-      this.breadcrumbs.activeRoutes.addObject(this);
+      if (!this.router.activeRoutes) {
+        this.router.set('activeRoutes', []);
+      }
+
+      this.router.activeRoutes.addObject(this);
     },
 
     deactivate() {
       this._super(...arguments);
 
-      this.breadcrumbs.activeRoutes.removeObject(this);
-    }
+      this.router.activeRoutes.removeObject(this);
+    },
   });
 }
 
