@@ -9,13 +9,13 @@ export default Controller.extend({
   }),
 
   filteredProjects: computed('tags.@each.selected', function() {
-    const projects = this.model;
+    const projects = this.model.sortBy('createdAt').reverse();
     const tagNames = this.tags.filterBy('selected').mapBy('name');
 
     if (tagNames.length === 0) {
       return projects;
     }
 
-    return projects.filter(project => project.tags.some(v => tagNames.includes(v))).sortBy('createdAt');
+    return projects.filter(project => project.tags.some(v => tagNames.includes(v)));
   })
 });
