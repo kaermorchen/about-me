@@ -6,7 +6,9 @@ client: Telecan
 clientUrl: http://telecan.ru/
 logo: /assets/images/projects/nonmetal_logo.png
 screenshots: 
-  - /assets/images/projects/nonmetal_1.png
+  - src: /assets/images/projects/nonmetal_1.png
+    w: 1503
+    h: 950
 tags: 
   - HTML
   - SPA 

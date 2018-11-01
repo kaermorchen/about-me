@@ -39,14 +39,14 @@
 
   <div class="col-8">
     {{#photo-swipe
-      items=model.images
+      items=model.screenshots
       class="mb-3 position-relative border"
       history=false
       shareEl=false
     as |photoswipe|
     }}
       <img
-        src={{model.screenshots.firstObject}}
+        src={{model.screenshots.firstObject.src}}
         class="img-fluid cursor-zoom-in"
         role="button"
         onclick={{action photoswipe.actions.open}}

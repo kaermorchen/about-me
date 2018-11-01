@@ -7,9 +7,15 @@ client: DekkoSecure
 clientUrl: https://dekkosecure.com/
 logo: /assets/images/projects/dekko_logo.png
 screenshots:
-  - /assets/images/projects/dekko_1.png
-  - /assets/images/projects/dekko_2.png
-  - /assets/images/projects/dekko_3.png
+  - src: /assets/images/projects/dekko_1.png
+    w: 1920
+    h: 936
+  - src: /assets/images/projects/dekko_2.png
+    w: 1920
+    h: 936
+  - src: /assets/images/projects/dekko_3.png
+    w: 1920
+    h: 936
 tags: 
   - HTML
   - SPA 

@@ -6,9 +6,15 @@ client: Smartomato
 url: https://smartomato.ru/
 logo: /assets/images/projects/smartomato_logo.png
 screenshots: 
-  - /assets/images/projects/smartomato_1.png
-  - /assets/images/projects/smartomato_2.png
-  - /assets/images/projects/smartomato_3.png
+  - src: /assets/images/projects/smartomato_1.png
+    w: 1920
+    h: 955
+  - src: /assets/images/projects/smartomato_2.png
+    w: 1920
+    h: 955
+  - src: /assets/images/projects/smartomato_3.png
+    w: 1920
+    h: 955
 tags: 
   - HTML
   - SPA 

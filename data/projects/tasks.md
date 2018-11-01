@@ -6,8 +6,12 @@ client: Telecan
 clientUrl: http://telecan.ru/
 logo: /assets/images/projects/tasks_logo.png
 screenshots: 
-  - /assets/images/projects/tasks_1.png
-  - /assets/images/projects/tasks_2.png
+  - src: /assets/images/projects/tasks_1.png
+    w: 1053
+    h: 950
+  - src: /assets/images/projects/tasks_2.png
+    w: 1053
+    h: 950
 tags: 
   - HTML
   - SPA 
