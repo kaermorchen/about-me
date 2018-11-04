@@ -8,7 +8,7 @@ export default Route.extend({
   model() {
     return RSVP.hash({
       model: this.get('request').fetch('/about.json').then(response => response.json()),
-      projects: this.get('store').findAll('project')
+      projects: this.get('store').findAll('project', { reload: true }).then(projects => projects.sortBy('createdAt').reverse())
     });
   },
 
