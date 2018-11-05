@@ -1,0 +1,30 @@
+---
+name: OnRust
+type: Web app
+url: http://onrust.ru
+createdAt: 2014-10-15
+logo: /assets/images/projects/onrust_logo.jpg
+screenshots: 
+  - src: /assets/images/projects/onrust_1.png
+    w: 1366
+    h: 2476
+  - src: /assets/images/projects/onrust_2.png
+    w: 1366
+    h: 1543
+  - src: /assets/images/projects/onrust_3.png
+    w: 1366
+    h: 919
+  - src: /assets/images/projects/onrust_4.jpg
+    w: 1366
+    h: 5874
+tags:
+  - HTML
+  - SPA 
+  - PHP 
+  - Ember.js
+  - Symfony
+---
+
+Developed a SPA based on Ember.js and Symfony 2
+
+WebSockets
