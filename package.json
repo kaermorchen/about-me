@@ -1,11 +1,17 @@
 {
   "name": "romanov",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "private": true,
-  "description": "Small description for romanov goes here",
-  "repository": "",
-  "license": "MIT",
-  "author": "",
+  "description": "This is repository of my website (https://stanislavromanov.ru)",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/kaermorchen/romanov.git"
+  },
+  "author": {
+    "name": "Stanislav Romanov",
+    "email": "kaermorchen@gmail.com",
+    "url": "https://stanislavromanov.ru"
+  },
   "directories": {
     "doc": "doc",
     "test": "tests"
