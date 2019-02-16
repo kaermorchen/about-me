@@ -3,7 +3,7 @@ import format from 'date-fns/format';
 
 export function formatDate([date, dateFormat]) {
   if (!dateFormat) {
-    dateFormat = 'dd.MM.YYYY';
+    dateFormat = 'dd.MM.yyyy';
   }
 
   return format(date, dateFormat);
