@@ -11,7 +11,14 @@ module.exports = function(defaults) {
     },
 
     'ember-mdi': {
-      icons: ['email-outline', 'skype-business', 'github-circle', 'checkbox-blank-circle', 'checkbox-blank-circle-outline', 'magnify-plus-outline'],
+      icons: [
+        'email-outline',
+        'skype-business',
+        'github-circle',
+        'checkbox-blank-circle',
+        'checkbox-blank-circle-outline',
+        'magnify-plus-outline'
+      ],
     },
 
     'ember-composable-helpers': {
@@ -20,7 +27,17 @@ module.exports = function(defaults) {
   });
 
   let projectsJson = new StaticSiteJson('data/projects', {
-    attributes: ['name', 'type', 'url', 'createdAt', 'client', 'clientUrl', 'logo', 'screenshots', 'tags'],
+    attributes: [
+      'name',
+      'type',
+      'url',
+      'createdAt',
+      'client',
+      'clientUrl',
+      'logo',
+      'screenshots',
+      'tags'
+    ],
     contentTypes: ['html'],
     contentFolder: 'data/projects',
     type: 'projects',

@@ -8,14 +8,22 @@ export default Controller.extend({
     return tags.uniq().sort().map(name => ({ name, selected: false }));
   }),
 
-  filteredProjects: computed('tags.@each.selected', function() {
+  selectedTags: computed('tags.@each.selected', function () {
+    return this.tags.filterBy('selected');
+  }),
+
+  filteredProjects: computed('selectedTags.length', function() {
     const projects = this.model.sortBy('createdAt').reverse();
-    const tagNames = this.tags.filterBy('selected').mapBy('name');
+    const tagNames = this.selectedTags.mapBy('name');
 
     if (tagNames.length === 0) {
       return projects;
     }
 
     return projects.filter(project => project.tags.some(v => tagNames.includes(v)));
-  })
+  }),
+
+  selectAll() {
+    this.tags.setEach('selected', false);
+  }
 });

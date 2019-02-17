@@ -2,6 +2,14 @@
 
 <div class="mb-3">
   Filters:
+
+  <span
+    class="badge {{if (eq selectedTags.length 0) "badge-primary" "badge-light"}} cursor-pointer"
+    onclick={{action selectAll}}
+  >
+    All
+  </span>
+
   {{#each tags as |tag|}}
     <span
       class="badge {{if tag.selected "badge-primary" "badge-light"}} cursor-pointer"
