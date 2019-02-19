@@ -1,24 +1,22 @@
 <h1 class="mb-4">Portfolio</h1>
 
-<div class="mb-3">
-  Filters:
+Filters:
 
-  <span
-    class="badge {{if (eq selectedTags.length 0) "badge-primary" "badge-light"}} cursor-pointer"
-    onclick={{action selectAll}}
+<button
+  class="btn btn-sm mb-3 {{if (eq selectedTags.length 0) "btn-primary" "btn-light"}} cursor-pointer"
+  onclick={{action selectAll}}
+>
+  All
+</button>
+
+{{#each tags as |tag|}}
+  <button
+    class="btn btn-sm mb-3 {{if tag.selected "btn-primary" "btn-light"}} cursor-pointer"
+    onclick={{toggle-action "selected" tag}}
   >
-    All
-  </span>
-
-  {{#each tags as |tag|}}
-    <span
-      class="badge {{if tag.selected "badge-primary" "badge-light"}} cursor-pointer"
-      onclick={{toggle-action "selected" tag}}
-    >
-      {{tag.name}}
-    </span>
-  {{/each}}
-</div>
+    {{tag.name}}
+  </button>
+{{/each}}
 
 <div class="row">
   {{#each filteredProjects as |item|}}
