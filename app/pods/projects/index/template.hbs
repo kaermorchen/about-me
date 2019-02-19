@@ -1,7 +1,5 @@
 <h1 class="mb-4">Portfolio</h1>
 
-Filters:
-
 <button
   class="btn btn-sm mb-3 {{if (eq selectedTags.length 0) "btn-primary" "btn-light"}} cursor-pointer"
   onclick={{action selectAll}}
@@ -20,6 +18,6 @@ Filters:
 
 <div class="row">
   {{#each filteredProjects as |item|}}
-    {{project-preview project=item class="col-4 mb-3"}}
+    {{project-preview project=item class="col-md-6 col-lg-4 mb-3"}}
   {{/each}}
 </div>

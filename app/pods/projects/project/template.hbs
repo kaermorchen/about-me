@@ -1,5 +1,5 @@
 <div class="row">
-  <div class="col-4">
+  <div class="col-lg-4">
     <h1 class="mb-3">{{model.name}}</h1>
 
     <dl class="row">
@@ -37,7 +37,7 @@
     {{model.safetyHtml}}
   </div>
 
-  <div class="col-8">
+  <div class="col-lg-8">
     {{#photo-swipe
       items=model.screenshots
       class="mb-3 position-relative border"
@@ -50,7 +50,7 @@
         class="img-fluid cursor-zoom-in"
         role="button"
         onclick={{action photoswipe.actions.open}}
-        alt=""
+        alt="Screenshot"
       >
       {{mdi-icon
         "magnify-plus-outline"

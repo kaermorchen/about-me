@@ -1,10 +1,10 @@
 <div class="row section">
-  <div class="col-8">
-    <h1 class="mb-5">I am Stanislav Romanov</h1>
-    <p class="mb-5">I am a Web Developer located in Rostov-on-Don, Russia. I currently work as a freelancer. I have {{experienceYears}} years commercial experience working with clients from around the world.</p>
+  <div class="col-md-8">
+    <h1 class="mb-3">I am Stanislav Romanov</h1>
+    <p class="mb-3">I am a Web Developer located in Rostov-on-Don, Russia. I currently work as a freelancer. I have {{experienceYears}} years commercial experience working with clients from around the world.</p>
     <div class="mb-1">Email: kaermorchen at gmail dot com</div>
     <div class="mb-1">Skype: romanov.s.u</div>
-    <div class="mb-1">
+    <div class="mb-3">
       GitHub:
       <a
         href="https://github.com/kaermorchen"
@@ -17,21 +17,21 @@
       </a>
     </div>
   </div>
-  <div class="col-4">
-    <img src="/assets/images/i.jpg" alt="Stanislav Romanov">
+  <div class="col-md-4">
+    <img src="/assets/images/i.jpg" alt="Stanislav Romanov" class="img-fluid">
   </div>
 </div>
 
 <div class="row section">
-  <div class="col-4">
+  <div class="col-md-4">
     <h2>Skills</h2>
     <p>{{model.skills.description}}</p>
   </div>
 
   {{#each-in model.skills.data as |scopeName scope|}}
-    <div class="col-4">
+    <div class="col-md-4">
       <h3 class="pt-1">{{scopeName}}</h3>
-      <p class="mb-0">
+      <p>
         {{#each-in scope as |skillName skills|}}
           {{skillName}}:
           {{#each skills as |skill index|}}{{if index ", "}}{{skill}}{{/each}}
@@ -43,12 +43,12 @@
 </div>
 
 <div class="row section">
-  <div class="col-4">
+  <div class="col-md-4">
     <h2>Education</h2>
     <p>{{model.education.description}}</p>
   </div>
 
-  <div class="col-8">
+  <div class="col-md-8">
     {{#each model.education.data as |item|}}
       {{cv-item item=item}}
     {{/each}}
@@ -56,24 +56,14 @@
 </div>
 
 <div class="row section">
-  <div class="col-4">
+  <div class="col-md-4">
     <h2>Experience</h2>
     <p>{{model.experience.description}}</p>
   </div>
 
-  <div class="col-8">
+  <div class="col-md-8">
     {{#each model.experience.data as |item|}}
       {{cv-item item=item}}
-    {{/each}}
-  </div>
-</div>
-
-<div class="section">
-  <h2>{{link-to "Portfolio" "projects"}}</h2>
-
-  <div class="row">
-    {{#each projects as |project|}}
-      {{project-preview project=project class="col-4 mb-3"}}
     {{/each}}
   </div>
 </div>
