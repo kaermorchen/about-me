@@ -7,7 +7,7 @@ export default Component.extend({
 
   project: null,
 
-  style: computed ('project.logo', function () {
-    return htmlSafe(`backgroud-image: ${this.get('project.logo')}`);
+  style: computed ('project.attributes.logo', function () {
+    return htmlSafe(`backgroud-image: ${this.get('project.attributes.logo')}`);
   })
 });

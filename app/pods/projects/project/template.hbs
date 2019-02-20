@@ -1,52 +1,52 @@
 <div class="row">
   <div class="col-lg-4">
-    <h1 class="mb-3">{{model.name}}</h1>
+    <h1 class="mb-3">{{model.attributes.name}}</h1>
 
     <dl class="row">
       <dt class="col-sm-3">Type</dt>
-      <dd class="col-sm-9">{{model.type}}</dd>
+      <dd class="col-sm-9">{{model.attributes.type}}</dd>
 
       <dt class="col-sm-3">Year</dt>
-      <dd class="col-sm-9">{{date-year model.createdAt}}</dd>
+      <dd class="col-sm-9">{{date-year model.attributes.createdAt}}</dd>
 
-      {{#if model.url}}
+      {{#if model.attributes.url}}
         <dt class="col-sm-3">Link</dt>
         <dd class="col-sm-9">
-          <a href={{model.url}} target="_blank" rel="noopener">{{model.url}}</a>
+          <a href={{model.attributes.url}} target="_blank" rel="noopener">{{model.attributes.url}}</a>
         </dd>
       {{/if}}
 
-      {{#if model.client}}
+      {{#if model.attributes.client}}
         <dt class="col-sm-3">Customer</dt>
         <dd class="col-sm-9">
-          {{#if model.clientUrl}}
-            <a href={{model.clientUrl}} target="_blank" rel="noopener">
+          {{#if model.attributes.clientUrl}}
+            <a href={{model.attributes.clientUrl}} target="_blank" rel="noopener">
               {{if
-                model.client
-                model.client
-                model.clientUrl
+                model.attributes.client
+                model.attributes.client
+                model.attributes.clientUrl
               }}
             </a>
           {{else}}
-            {{model.client}}
+            {{model.attributes.client}}
           {{/if}}
         </dd>
       {{/if}}
     </dl>
 
-    {{model.safetyHtml}}
+    {{html-safe model.attributes.html}}
   </div>
 
   <div class="col-lg-8">
     {{#photo-swipe
-      items=model.screenshots
+      items=model.attributes.screenshots
       class="mb-3 position-relative border"
       history=false
       shareEl=false
     as |photoswipe|
     }}
       <img
-        src={{model.screenshots.firstObject.src}}
+        src={{model.attributes.screenshots.firstObject.src}}
         class="img-fluid cursor-zoom-in"
         role="button"
         onclick={{action photoswipe.actions.open}}

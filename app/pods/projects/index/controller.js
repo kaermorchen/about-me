@@ -3,7 +3,7 @@ import { computed } from '@ember/object';
 
 export default Controller.extend({
   tags: computed(function () {
-    const tags = this.model.reduce((previousValue, item) => previousValue.concat(item.tags), []);
+    const tags = this.model.reduce((previousValue, item) => previousValue.concat(item.attributes.tags), []);
 
     return tags.uniq().sort().map(name => ({ name, selected: false }));
   }),
@@ -13,14 +13,14 @@ export default Controller.extend({
   }),
 
   filteredProjects: computed('selectedTags.length', function() {
-    const projects = this.model.sortBy('createdAt').reverse();
+    const projects = this.model.sortBy('attributes.createdAt').reverse();
     const tagNames = this.selectedTags.mapBy('name');
 
     if (tagNames.length === 0) {
       return projects;
     }
 
-    return projects.filter(project => project.tags.some(v => tagNames.includes(v)));
+    return projects.filter(project => project.attributes.tags.some(v => tagNames.includes(v)));
   }),
 
   selectAll() {
