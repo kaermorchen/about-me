@@ -1,10 +1,8 @@
-import { inject as service } from '@ember/service';
 import Route from '@ember/routing/route';
+import fetch from 'fetch';
 
 export default Route.extend({
-  request: service(),
-
   model() {
-    return this.request.fetch('/about.json').then(response => response.json());
+    return fetch('/about.json').then(response => response.json());
   }
 });

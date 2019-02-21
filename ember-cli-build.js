@@ -4,7 +4,7 @@ const EmberApp = require('ember-cli/lib/broccoli/ember-app');
 const BroccoliMergeTrees = require('broccoli-merge-trees');
 const StaticSiteJson = require('broccoli-static-site-json');
 
-module.exports = function(defaults) {
+module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
     'ember-cli-bootstrap-4': {
       js: null
@@ -23,6 +23,10 @@ module.exports = function(defaults) {
 
     'ember-composable-helpers': {
       only: ['toggle', 'toggle-action']
+    },
+
+    'ember-fetch': {
+      preferNative: true
     }
   });
 
