@@ -21,10 +21,6 @@ module.exports = function (defaults) {
       ],
     },
 
-    'ember-composable-helpers': {
-      only: ['toggle', 'toggle-action']
-    },
-
     'ember-fetch': {
       preferNative: true
     }

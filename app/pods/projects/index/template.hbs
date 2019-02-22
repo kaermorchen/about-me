@@ -10,7 +10,7 @@
 {{#each tags as |tag|}}
   <button
     class="btn btn-sm mb-3 {{if tag.selected "btn-primary" "btn-light"}} cursor-pointer"
-    onclick={{toggle-action "selected" tag}}
+    onclick={{action toggleTagSelected tag}}
   >
     {{tag.name}}
   </button>

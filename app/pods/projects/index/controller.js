@@ -1,5 +1,5 @@
 import Controller from '@ember/controller';
-import { computed } from '@ember/object';
+import { computed, set } from '@ember/object';
 
 export default Controller.extend({
   tags: computed(function () {
@@ -12,7 +12,7 @@ export default Controller.extend({
     return this.tags.filterBy('selected');
   }),
 
-  filteredProjects: computed('selectedTags.length', function() {
+  filteredProjects: computed('selectedTags.length', function () {
     const projects = this.model.sortBy('attributes.createdAt').reverse();
     const tagNames = this.selectedTags.mapBy('name');
 
@@ -25,5 +25,9 @@ export default Controller.extend({
 
   selectAll() {
     this.tags.setEach('selected', false);
+  },
+
+  toggleTagSelected(tag) {
+    set(tag, 'selected', !tag.selected);
   }
 });
