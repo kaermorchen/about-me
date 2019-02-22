@@ -1,7 +1,7 @@
 <h1 class="mb-4">Portfolio</h1>
 
 <button
-  class="btn btn-sm mb-3 {{if (eq selectedTags.length 0) "btn-primary" "btn-light"}} cursor-pointer"
+  class="btn btn-sm mb-3 {{if selectedTags.length "btn-light" "btn-primary"}} cursor-pointer"
   onclick={{action selectAll}}
 >
   All

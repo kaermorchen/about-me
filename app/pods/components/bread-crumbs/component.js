@@ -10,5 +10,9 @@ export default Component.extend({
 
   filteredRoutes: computed('router.activeRoutes.@each.breadcrumb', function () {
     return this.get('router.activeRoutes').filterBy('breadcrumb');
+  }),
+
+  linkRoutes: computed('filteredRoutes.@each.breadcrumb', function () {
+    return this.filteredRoutes.slice(0, -1);
   })
 });
