@@ -1,4 +1,4 @@
-<div
+<header
   class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 bg-white border-bottom box-shadow"
 >
   <div class="container d-flex align-items-center justify-content-between">
@@ -6,12 +6,12 @@
       {{link-to "Stanislav Romanov" "index"}}
     </h5>
 
-    <nav class="my-2 my-md-0 mr-md-3">
+    <nav class="my-2 my-md-0 mr-md-3" role="navigation">
       {{link-to "Portfolio" "projects" class="p-2 text-dark"}}
     </nav>
   </div>
-</div>
+</header>
 
-<div class="container">
+<main class="container" role="main">
   {{outlet}}
-</div>
+</main>
