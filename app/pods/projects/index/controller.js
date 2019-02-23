@@ -13,7 +13,7 @@ export default Controller.extend({
   }),
 
   filteredProjects: computed('selectedTags.length', function () {
-    const projects = this.model.sortBy('attributes.createdAt').reverse();
+    const projects = this.model.sort((a, b) => new Date(b.attributes.createdAt) - new Date(a.attributes.createdAt));
     const tagNames = this.selectedTags.mapBy('name');
 
     if (tagNames.length === 0) {
