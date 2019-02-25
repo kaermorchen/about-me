@@ -6,6 +6,10 @@ const StaticSiteJson = require('broccoli-static-site-json');
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    fingerprint: {
+      extensions: ['js', 'css', 'svg']
+    },
+
     'ember-cli-bootstrap-4': {
       js: null
     },
@@ -15,8 +19,6 @@ module.exports = function (defaults) {
         'email-outline',
         'skype-business',
         'github-circle',
-        'checkbox-blank-circle',
-        'checkbox-blank-circle-outline',
         'magnify-plus-outline'
       ],
     },
