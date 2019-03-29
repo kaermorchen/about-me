@@ -3,6 +3,7 @@ import fetch from 'fetch';
 
 export default Route.extend({
   breadcrumb: 'Projects',
+  title: 'Projects',
 
   model() {
     return fetch('/data/projects/all.json')
