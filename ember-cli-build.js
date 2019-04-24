@@ -1,11 +1,16 @@
 'use strict';
 
 const EmberApp = require('ember-cli/lib/broccoli/ember-app');
-const BroccoliMergeTrees = require('broccoli-merge-trees');
-const StaticSiteJson = require('broccoli-static-site-json');
+const fs = require('fs');
+const projectUrls = fs.readdirSync('./data/projects').map(item => `/projects/${item.slice(0, -3)}`);
+const urls = ['/', '/projects'].concat(projectUrls);
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    prember: {
+      urls
+    },
+
     fingerprint: {
       extensions: ['js', 'css', 'svg']
     },
@@ -28,26 +33,5 @@ module.exports = function (defaults) {
     }
   });
 
-  let projectsJson = new StaticSiteJson('data/projects', {
-    attributes: [
-      'name',
-      'type',
-      'url',
-      'createdAt',
-      'client',
-      'clientUrl',
-      'logo',
-      'screenshots',
-      'tags'
-    ],
-    contentTypes: ['html'],
-    contentFolder: 'data/projects',
-    type: 'projects',
-    collections: [{
-      src: 'data/projects',
-      output: 'all.json',
-    }]
-  });
-
-  return new BroccoliMergeTrees([app.toTree(), projectsJson]);
+  return app.toTree();
 };
