@@ -10,6 +10,7 @@ Router.map(function () {
   this.route('projects', function () {
     this.route('project', { path: ':project_id' });
   });
+  this.route('404', { path: '*path' });
 });
 
 export default Router;
