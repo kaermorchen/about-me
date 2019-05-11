@@ -4,6 +4,7 @@ import { inject as service } from '@ember/service';
 export function initialize() {
   Route.reopen({
     router: service(),
+    headData: service(),
 
     breadcrumb: null,
 
