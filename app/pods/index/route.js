@@ -7,6 +7,7 @@ export default Route.extend({
   },
 
   afterModel() {
+    this.set('headData.title', 'Stanislav Romanov');
     this.set('headData.description', 'Personal website of Stanislav Romanov');
   }
 });
