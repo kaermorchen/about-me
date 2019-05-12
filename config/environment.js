@@ -25,7 +25,17 @@ module.exports = function(environment) {
 
     fastboot: {
       hostWhitelist: [/^localhost:\d+$/]
-    }
+    },
+
+    metricsAdapters: [
+      {
+        name: 'GoogleAnalytics',
+        environments: ['production'],
+        config: {
+          id: 'UA-139887621-1 ',
+        }
+      }
+    ]
   };
 
   if (environment === 'development') {
