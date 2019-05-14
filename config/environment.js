@@ -1,6 +1,6 @@
 'use strict';
 
-module.exports = function(environment) {
+module.exports = function (environment) {
   let ENV = {
     modulePrefix: 'romanov',
     podModulePrefix: 'romanov/pods',
@@ -33,6 +33,12 @@ module.exports = function(environment) {
         environments: ['production'],
         config: {
           id: 'UA-139887621-1 ',
+        },
+      }, {
+        name: 'YandexMetrika',
+        environments: ['production'],
+        config: {
+          id: '9862315',
         }
       }
     ]
