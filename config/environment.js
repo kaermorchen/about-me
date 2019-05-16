@@ -23,6 +23,17 @@ module.exports = function (environment) {
       // when it is created
     },
 
+    contentSecurityPolicy: {
+      'default-src': ["'self'"],
+      'script-src':  ["'self'", "https://www.google-analytics.com", "https://mc.yandex.ru"],
+      'font-src':    ["'self'", "https://fonts.gstatic.com"],
+      'connect-src': ["'self'"],
+      'img-src':     ["'self'"],
+      'style-src':   ["'self'", "https://fonts.googleapis.com"],
+      'media-src':   ["'self'"],
+      'object-src':   ["'self'"],
+    },
+
     fastboot: {
       hostWhitelist: [/^localhost:\d+$/]
     },

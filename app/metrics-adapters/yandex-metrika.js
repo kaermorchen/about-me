@@ -39,7 +39,7 @@ export default BaseAdapter.extend({
 
   willDestroy() {
     let { document } = window;
-    let script = document.querySelector('script[src*="mc.yandex.ru"]');
+    let script = document.querySelector('script[src="https://mc.yandex.ru/metrika/tag.js"]');
 
     if (script) {
       script.remove();
