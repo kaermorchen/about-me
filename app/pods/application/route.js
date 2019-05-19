@@ -11,7 +11,6 @@ export default Route.extend({
     this._super(...arguments);
 
     this.router.on('routeDidChange', () => {
-
       if (typeof FastBoot === 'undefined') {
         const page = this.router.currentURL;
         const title = this.router.currentRouteName || 'unknown';
