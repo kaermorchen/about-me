@@ -15,7 +15,7 @@
     <meta name="msapplication-TileColor" content="#39b54a">
     <meta name="theme-color" content="#ffffff">
 
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Roboto+Slab&display=swap">
     <link integrity="" rel="stylesheet" href="{{rootURL}}assets/romanov.css">
 
     {{content-for "head-footer"}}
@@ -23,8 +23,8 @@
   <body>
     {{content-for "body"}}
 
-    <script src="{{rootURL}}assets/vendor.js"></script>
-    <script src="{{rootURL}}assets/romanov.js"></script>
+    <script src="{{rootURL}}assets/vendor.js" defer></script>
+    <script src="{{rootURL}}assets/romanov.js" defer></script>
 
     {{content-for "body-footer"}}
   </body>
