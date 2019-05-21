@@ -1,4 +1,5 @@
 {
-  "template-only-glimmer-components": true,
-  "jquery-integration": false
+  "application-template-wrapper": false,
+  "jquery-integration": false,
+  "template-only-glimmer-components": true
 }
