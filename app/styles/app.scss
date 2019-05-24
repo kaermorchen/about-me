@@ -25,6 +25,7 @@
 
 .mb-0 { margin-bottom: 0 !important; }
 .mb-1 { margin-bottom: map-get($spacers, 1) !important; }
+.mr-1 { margin-right: map-get($spacers, 1) !important; }
 .mb-2 { margin-bottom: map-get($spacers, 2) !important; }
 .mb-3 { margin-bottom: map-get($spacers, 3) !important; }
 .mb-4 { margin-bottom: map-get($spacers, 4) !important; }
@@ -93,12 +94,4 @@ dd {
 
 .fill-white {
   fill: $white;
-}
-
-.zoom-in {
-  position: absolute;
-  top: map-get($spacers, 3);
-  right: map-get($spacers, 3);
-  fill: $white;
-  background-color: $primary;
 }

@@ -19,15 +19,6 @@ module.exports = function (defaults) {
       js: null
     },
 
-    'ember-mdi': {
-      icons: [
-        'email-outline',
-        'skype-business',
-        'github-circle',
-        'magnify-plus-outline'
-      ],
-    },
-
     'ember-fetch': {
       preferNative: true
     }

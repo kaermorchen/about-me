@@ -24,14 +24,11 @@ module.exports = function (environment) {
     },
 
     contentSecurityPolicy: {
-      'default-src': ["'self'"],
+      'default-src': ["'none'"],
       'script-src':  ["'self'", "https://www.google-analytics.com", "https://mc.yandex.ru"],
       'font-src':    ["'self'", "https://fonts.gstatic.com"],
-      'connect-src': ["'self'"],
       'img-src':     ["'self'"],
       'style-src':   ["'self'", "https://fonts.googleapis.com"],
-      'media-src':   ["'self'"],
-      'object-src':   ["'self'"],
     },
 
     fastboot: {
@@ -61,6 +58,8 @@ module.exports = function (environment) {
     // ENV.APP.LOG_TRANSITIONS = true;
     // ENV.APP.LOG_TRANSITIONS_INTERNAL = true;
     // ENV.APP.LOG_VIEW_LOOKUPS = true;
+
+    ENV.contentSecurityPolicy['connect-src'] = ["'self'"];
   }
 
   if (environment === 'test') {
