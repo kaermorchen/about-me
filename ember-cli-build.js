@@ -12,7 +12,7 @@ module.exports = function (defaults) {
     },
 
     fingerprint: {
-      extensions: ['js', 'css', 'svg']
+      extensions: ['js', 'css']
     },
 
     'ember-cli-bootstrap-4': {

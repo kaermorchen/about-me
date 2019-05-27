@@ -45,14 +45,18 @@
       shareEl=false
       as |photoswipe|
     }}
-      <img
-        src={{model.attributes.screenshots.firstObject.src}}
-        class="img-fluid cursor-zoom-in"
-        role="button"
-        onclick={{action photoswipe.actions.open}}
-        alt="Screenshot"
-        loading="lazy"
-      >
+      <picture>
+        <source srcset="{{model.attributes.screenshots.firstObject.src}}.webp" type="image/webp">
+        <source srcset={{model.attributes.screenshots.firstObject.src}} type="image/jpeg">
+        <img
+          src={{model.attributes.screenshots.firstObject.src}}
+          class="img-fluid cursor-zoom-in"
+          role="button"
+          onclick={{action photoswipe.actions.open}}
+          alt="Screenshot"
+          loading="lazy"
+        >
+      </picture>
     {{/photo-swipe}}
   </div>
 </div>
