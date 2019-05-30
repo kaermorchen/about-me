@@ -3,7 +3,7 @@ import fetch from 'fetch';
 
 export default Route.extend({
   model() {
-    return fetch('/about.json').then(response => response.json());
+    return fetch('/data/about.json').then(response => response.json());
   },
 
   afterModel() {
