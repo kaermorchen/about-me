@@ -1,7 +1,7 @@
 <h1 class="mb-4">Portfolio</h1>
 
 <button
-  class="btn btn-sm mb-3 {{if selectedTags.length "btn-light" "btn-primary"}} cursor-pointer"
+  class="btn mb-3 {{unless selectedTags.length "btn-primary"}} cursor-pointer"
   onclick={{action selectAll}}
 >
   All
@@ -9,7 +9,7 @@
 
 {{#each tags as |tag|}}
   <button
-    class="btn btn-sm mb-3 {{if tag.selected "btn-primary" "btn-light"}} cursor-pointer"
+    class="btn mb-3 {{if tag.selected "btn-primary"}} cursor-pointer"
     onclick={{action toggleTagSelected tag}}
   >
     {{tag.name}}

@@ -4,7 +4,7 @@
       <picture>
         <source srcset="{{@project.attributes.logo}}.webp" type="image/webp">
         <source srcset={{@project.attributes.logo}} type="image/jpeg">
-        <img src={{@project.attributes.logo}} alt={{@project.attributes.name}} class="img-fluid border" loading="lazy">
+        <img src={{@project.attributes.logo}} alt={{@project.attributes.name}} class="img-responsive border" loading="lazy">
       </picture>
     {{/link-to}}
   </div>
