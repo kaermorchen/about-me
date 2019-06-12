@@ -1,17 +1,13 @@
 {{head-layout}}
 
-<header
-  class="d-flex flex-column flex-md-row align-items-center p-3 border-bottom"
->
-  <div class="container d-flex align-items-center justify-content-between">
-    <h5 class="my-0 mr-md-auto font-weight-normal">
-      {{link-to "Stanislav Romanov" "index"}}
-    </h5>
+<header class="navbar">
+  <section class="navbar-section">
+    {{link-to "Stanislav Romanov" "index" class="navbar-brand mr-2"}}
+  </section>
 
-    <nav class="my-2 my-md-0 mr-md-3" role="navigation">
-      {{link-to "Portfolio" "projects" class="p-2 text-dark"}}
-    </nav>
-  </div>
+  <section class="navbar-section">
+    {{link-to "Portfolio" "projects" class="btn btn-link"}}
+  </section>
 </header>
 
 <main class="container" role="main">

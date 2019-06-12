@@ -19,14 +19,14 @@
 
 // Layout
 @import "node_modules/spectre.css/src/layout";
-@import "node_modules/spectre.css/src/hero";
+// @import "node_modules/spectre.css/src/hero";
 @import "node_modules/spectre.css/src/navbar";
 
 // Components
 // @import "node_modules/spectre.css/src/accordions";
 // @import "node_modules/spectre.css/src/avatars";
 // @import "node_modules/spectre.css/src/badges";
-// @import "node_modules/spectre.css/src/breadcrumbs";
+@import "node_modules/spectre.css/src/breadcrumbs";
 // @import "node_modules/spectre.css/src/bars";
 // @import "node_modules/spectre.css/src/cards";
 // @import "node_modules/spectre.css/src/chips";
@@ -54,3 +54,10 @@
 // @import "node_modules/spectre.css/src/utilities/position";
 // @import "node_modules/spectre.css/src/utilities/shapes";
 // @import "node_modules/spectre.css/src/utilities/text";
+
+// Experimentals
+// @import "node_modules/spectre.css/src/off-canvas";
+
+//Others
+
+@import "ember-photoswipe";

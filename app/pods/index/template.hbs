@@ -1,5 +1,5 @@
-<div class="row section">
-  <div class="col-md-8">
+<div class="columns section">
+  <div class="column col-md-8">
     <h1 class="mb-3">I am Stanislav Romanov</h1>
     <p class="mb-3">I am a Web Developer located in Rostov-on-Don, Russia. I currently work as a freelancer. I have {{experienceYears}} years commercial experience working with clients from around the world.</p>
     <div class="mb-1 d-flex align-items-center">{{svg-icon icon="email-outline"}} Email: kaermorchen at gmail dot com</div>
@@ -18,7 +18,7 @@
       </a>
     </div>
   </div>
-  <div class="col-md-4">
+  <div class="column col-md-4">
     <picture>
       <source srcset="/assets/images/i.jpg.webp" type="image/webp">
       <source srcset="/assets/images/i.jpg" type="image/jpeg">
@@ -27,14 +27,14 @@
   </div>
 </div>
 
-<div class="row section">
-  <div class="col-md-4">
+<div class="columns section">
+  <div class="column col-md-4">
     <h2>Skills</h2>
     <p>{{model.skills.description}}</p>
   </div>
 
   {{#each-in model.skills.data as |scopeName scope|}}
-    <div class="col-md-4">
+    <div class="column col-md-4">
       <h3 class="pt-1">{{scopeName}}</h3>
       <p>
         {{#each-in scope as |skillName skills|}}
@@ -47,26 +47,26 @@
   {{/each-in}}
 </div>
 
-<div class="row section">
-  <div class="col-md-4">
+<div class="columns section">
+  <div class="column col-md-4">
     <h2>Education</h2>
     <p>{{model.education.description}}</p>
   </div>
 
-  <div class="col-md-8">
+  <div class="column col-md-8">
     {{#each model.education.data as |item|}}
       {{cv-item item=item}}
     {{/each}}
   </div>
 </div>
 
-<div class="row section">
-  <div class="col-md-4">
+<div class="columns section">
+  <div class="column col-md-4">
     <h2>Experience</h2>
     <p>{{model.experience.description}}</p>
   </div>
 
-  <div class="col-md-8">
+  <div class="column col-md-8">
     {{#each model.experience.data as |item|}}
       {{cv-item item=item}}
     {{/each}}

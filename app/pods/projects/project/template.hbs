@@ -1,24 +1,24 @@
-<div class="row">
-  <div class="col-lg-4">
+<div class="columns">
+  <div class="column col-lg-4">
     <h1 class="mb-3">{{model.attributes.name}}</h1>
 
-    <dl class="row">
-      <dt class="col-sm-3">Type</dt>
-      <dd class="col-sm-9">{{model.attributes.type}}</dd>
+    <dl class="columns">
+      <dt class="column col-sm-3">Type</dt>
+      <dd class="column col-sm-9">{{model.attributes.type}}</dd>
 
-      <dt class="col-sm-3">Year</dt>
-      <dd class="col-sm-9">{{date-year model.attributes.createdAt}}</dd>
+      <dt class="column col-sm-3">Year</dt>
+      <dd class="column col-sm-9">{{date-year model.attributes.createdAt}}</dd>
 
       {{#if model.attributes.url}}
-        <dt class="col-sm-3">Link</dt>
-        <dd class="col-sm-9">
+        <dt class="column col-sm-3">Link</dt>
+        <dd class="column col-sm-9">
           <a href={{model.attributes.url}} target="_blank" rel="noopener">{{model.attributes.url}}</a>
         </dd>
       {{/if}}
 
       {{#if model.attributes.client}}
-        <dt class="col-sm-3">Customer</dt>
-        <dd class="col-sm-9">
+        <dt class="column col-sm-3">Customer</dt>
+        <dd class="column col-sm-9">
           {{#if model.attributes.clientUrl}}
             <a href={{model.attributes.clientUrl}} target="_blank" rel="noopener">
               {{if
@@ -37,7 +37,7 @@
     {{html-safe model.attributes.html}}
   </div>
 
-  <div class="col-lg-8">
+  <div class="column col-lg-8">
     {{#photo-swipe
       items=model.attributes.screenshots
       class="mb-3 position-relative border"
