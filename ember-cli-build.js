@@ -7,6 +7,14 @@ const urls = ['/', '/projects'].concat(projectUrls);
 
 module.exports = function (defaults) {
   let app = new EmberApp(defaults, {
+    'ember-mdi': {
+      icons: [
+        'email-outline',
+        'skype-business',
+        'github-circle',
+      ],
+    },
+
     prember: {
       urls
     },

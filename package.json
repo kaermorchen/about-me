@@ -51,6 +51,7 @@
     "ember-fetch": "^6.5.1",
     "ember-load-initializers": "^2.0.0",
     "ember-maybe-import-regenerator": "^0.1.6",
+    "ember-mdi": "https://github.com/kaermorchen/ember-mdi.git#09eda3637bcc54f1b00c8d98933654de5a138de4",
     "ember-metrics": "^0.13.0",
     "ember-photoswipe": "^0.5.0",
     "ember-qunit": "^4.4.1",
