@@ -1,5 +1,9 @@
-function App() {
-  return "Hello";
-}
+import { Button } from "@gravity-ui/uikit";
 
-export default App;
+export function App() {
+  return (
+    <Button view="action" size="l">
+      Hello
+    </Button>
+  );
+}
