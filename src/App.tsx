@@ -1,11 +1,7 @@
 import {
-  Button,
-  CloseButton,
   Container,
-  Drawer,
   Grid,
   Heading,
-  Portal,
   SegmentGroup,
   Stack,
 } from "@chakra-ui/react";
