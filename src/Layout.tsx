@@ -1,9 +1,9 @@
-import { Container } from "@gravity-ui/uikit";
+import { Container } from "@chakra-ui/react";
 import { Outlet } from "react-router";
 
 export function Layout() {
   return (
-    <Container maxWidth="l">
+    <Container>
       <Outlet />
     </Container>
   );

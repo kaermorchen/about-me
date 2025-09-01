@@ -1,9 +1,5 @@
-import { Button } from "@gravity-ui/uikit";
+import { Button } from "@chakra-ui/react";
 
 export function App() {
-  return (
-    <Button view="action" size="l">
-      Hello
-    </Button>
-  );
+  return <Button>Hello</Button>;
 }
