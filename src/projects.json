@@ -6,7 +6,7 @@
       "attributes": {
         "html": "<p>Developed a SPA based on Backbone.js</p>",
         "name": "Bankomats",
-        "type": "Web app",
+        "type": "SPA",
         "url": "https://bankomats.net/",
         "createdAt": "2012-12-15T00:00:00.000Z",
         "logo": "/assets/images/projects/bankomats_logo.png",
@@ -136,7 +136,7 @@
       "attributes": {
         "html": "<p>Developed a SPA based on Ember.js</p>",
         "name": "Dekko",
-        "type": "Web app",
+        "type": "SPA",
         "url": "https://dekko.io/",
         "createdAt": "2018-10-15T00:00:00.000Z",
         "client": "DekkoSecure",
@@ -190,7 +190,7 @@
       "attributes": {
         "html": "<p>Designed and developed a SPA based on Ember.js</p>",
         "name": "Doks",
-        "type": "Web app",
+        "type": "SPA",
         "createdAt": "2016-12-15T00:00:00.000Z",
         "client": "Telecan",
         "clientUrl": "http://telecan.ru/",
@@ -242,7 +242,7 @@
       "attributes": {
         "html": "<p>Developed a SPA based on Ember.js</p>",
         "name": "Finatera",
-        "type": "Web app",
+        "type": "SPA",
         "url": "http://finatera.com/",
         "createdAt": "2015-02-15T00:00:00.000Z",
         "logo": "/assets/images/projects/finatera_logo.png",
@@ -302,7 +302,7 @@
       "attributes": {
         "html": "<p>Designed and developed a SPA</p>",
         "name": "Geodata",
-        "type": "Web app",
+        "type": "SPA",
         "createdAt": "2017-03-15T00:00:00.000Z",
         "client": "Telecan",
         "clientUrl": "http://telecan.ru/",
@@ -333,7 +333,7 @@
       "attributes": {
         "html": "<p>Developed a web application for \"Selsoft\"</p>",
         "name": "Glonass Monitoring",
-        "type": "Web app",
+        "type": "SPA",
         "createdAt": "2012-11-15T00:00:00.000Z",
         "client": "Selsoft",
         "clientUrl": "http://selsoft.ru/",
@@ -370,7 +370,7 @@
       "attributes": {
         "html": "<p>Developed a SPA based on Ember.js and Laravel</p>",
         "name": "Go round",
-        "type": "Web app",
+        "type": "SPA",
         "url": "http://goround.me/",
         "createdAt": "2014-07-15T00:00:00.000Z",
         "logo": "/assets/images/projects/goround_logo.png",
@@ -570,7 +570,7 @@
       "attributes": {
         "html": "<p>Designed and developed a SPA</p>",
         "name": "Nerudka",
-        "type": "Web app",
+        "type": "SPA",
         "createdAt": "2017-04-15T00:00:00.000Z",
         "client": "Telecan",
         "clientUrl": "http://telecan.ru/",
@@ -591,7 +591,7 @@
       "attributes": {
         "html": "<p>Developed a SPA based on Ember.js and Symfony 2</p>\n<p>WebSockets</p>",
         "name": "OnRust",
-        "type": "Web app",
+        "type": "SPA",
         "url": "http://onrust.ru",
         "createdAt": "2014-10-15T00:00:00.000Z",
         "logo": "/assets/images/projects/onrust_logo.jpg",
@@ -812,7 +812,7 @@
       "attributes": {
         "html": "<p>Designed and developed a SPA based on Ember.js</p>",
         "name": "Smartomato",
-        "type": "Web app",
+        "type": "SPA",
         "url": "https://smartomato.ru/",
         "createdAt": "2016-04-15T00:00:00.000Z",
         "client": "Smartomato",
@@ -873,7 +873,7 @@
       "attributes": {
         "html": "<p>Designed and developed a SPA based on Ember.js</p>",
         "name": "Tasks",
-        "type": "Web app",
+        "type": "SPA",
         "createdAt": "2016-12-15T00:00:00.000Z",
         "client": "Telecan",
         "clientUrl": "http://telecan.ru/",
@@ -921,7 +921,7 @@
       "attributes": {
         "html": "<p>Developed a web app for the game <a href=\"http://wotgenerals.ru\">World of Tanks Generals</a></p>",
         "name": "WoTG",
-        "type": "Web app",
+        "type": "SPA",
         "url": "https://wotg.info/",
         "createdAt": "2015-03-15T00:00:00.000Z",
         "logo": "/assets/images/projects/wotg_logo.png",

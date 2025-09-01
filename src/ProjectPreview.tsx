@@ -1,22 +1,22 @@
 import { Heading, Image, Stack, Tag } from "@chakra-ui/react";
+import type { Project } from "./App";
 
 interface ProjectPreviewProps {
-  src: string;
-  name: string;
-  date: string;
-  type: string;
+  project: Project;
+  onClick: (project: Project) => void;
 }
 
 export function ProjectPreview(props: ProjectPreviewProps) {
-  const { src, name, date, type } = props;
+  const { project, onClick } = props;
 
   return (
     <Stack>
       <Image
         aspectRatio={3 / 2}
         width="350px"
-        src={`/about-me${src}`}
+        src={`/about-me${project.logo}`}
         borderRadius={10}
+        onClick={() => onClick(project)}
       />
       <Stack
         direction="row"
@@ -24,13 +24,13 @@ export function ProjectPreview(props: ProjectPreviewProps) {
         justifyContent="space-between"
       >
         <Stack direction="row" alignItems="baseline">
-          <Heading>{name}</Heading>
+          <Heading>{project.name}</Heading>
           <Tag.Root>
-            <Tag.Label>{type}</Tag.Label>
+            <Tag.Label>{project.type}</Tag.Label>
           </Tag.Root>
         </Stack>
 
-        {new Date(date).getFullYear()}
+        {new Date(project.createdAt).getFullYear()}
       </Stack>
     </Stack>
   );
