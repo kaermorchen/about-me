@@ -13,7 +13,6 @@ export function ProjectPreview(props: ProjectPreviewProps) {
     <Stack>
       <Image
         aspectRatio={3 / 2}
-        width="350px"
         src={`/about-me${project.logo}`}
         borderRadius={10}
         onClick={() => onClick(project)}

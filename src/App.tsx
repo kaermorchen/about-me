@@ -3,6 +3,7 @@ import {
   Grid,
   Heading,
   SegmentGroup,
+  SimpleGrid,
   Stack,
 } from "@chakra-ui/react";
 import projects from "./projects.json";
@@ -44,7 +45,7 @@ export function App() {
           </SegmentGroup.Root>
         </div>
 
-        <Grid templateColumns="repeat(3, 1fr)" gap="20">
+        <SimpleGrid columns={{ base: 1, md: 2, lg: 3 }} gap="20">
           {filteredProjects.map((item) => (
             <ProjectPreview
               key={item.id}
@@ -52,7 +53,7 @@ export function App() {
               onClick={() => navigate(`/projects/${item.id}`)}
             />
           ))}
-        </Grid>
+        </SimpleGrid>
       </Stack>
       <Outlet />
     </Container>
