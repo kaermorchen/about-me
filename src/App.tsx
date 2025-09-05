@@ -1,6 +1,5 @@
 import {
   Container,
-  Grid,
   Heading,
   SegmentGroup,
   SimpleGrid,
