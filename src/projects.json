@@ -2,6 +2,37 @@
   "data": [
     {
       "type": "projects",
+      "id": "meiliadmin",
+      "attributes": {
+        "html": "<p>Admin panel for the search engine <a href='https://www.meilisearch.com/' target='_blank'>meilisearch</a></p>",
+        "name": "MeiliAdmin",
+        "type": "SPA",
+        "createdAt": "2021-01-09T00:00:00.000Z",
+        "client": "GitHub",
+        "clientUrl": "https://kaermorchen.github.io/meiliadmin",
+        "logo": "/assets/images/projects/meiliadmin_logo.png",
+        "screenshots": [
+          {
+            "src": "/assets/images/projects/meiliadmin_01.png",
+            "w": 1918,
+            "h": 1036
+          },
+          {
+            "src": "/assets/images/projects/meiliadmin_02.png",
+            "w": 1891,
+            "h": 1036
+          },
+          {
+            "src": "/assets/images/projects/meiliadmin_03.png",
+            "w": 1915,
+            "h": 1027
+          }
+        ],
+        "tags": ["HTML", "SPA", "Ember.js"]
+      }
+    },
+    {
+      "type": "projects",
       "id": "bankomats",
       "attributes": {
         "html": "<p>Developed a SPA based on Backbone.js</p>",
