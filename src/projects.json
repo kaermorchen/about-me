@@ -2,6 +2,37 @@
   "data": [
     {
       "type": "projects",
+      "id": "vscode-drupal",
+      "attributes": {
+        "html": "<p>This extension supports Drupal projects in VSCode code editor</p>",
+        "name": "VSCode Drupal",
+        "type": "DevTools",
+        "createdAt": "2022-11-15T00:00:00.000Z",
+        "client": "GitHub",
+        "clientUrl": "https://marketplace.visualstudio.com/items?itemName=Stanislav.vscode-drupal",
+        "logo": "/assets/images/projects/vscode-drupal_logo.png",
+        "screenshots": [
+          {
+            "src": "/assets/images/projects/vscode-drupal_logo.png",
+            "w": 1800,
+            "h": 1200
+          },
+          {
+            "src": "/assets/images/projects/vscode-drupal_01.gif",
+            "w": 1191,
+            "h": 641
+          },
+          {
+            "src": "/assets/images/projects/vscode-drupal_02.gif",
+            "w": 1191,
+            "h": 1155
+          }
+        ],
+        "tags": ["DevTools", "Drupal"]
+      }
+    },
+    {
+      "type": "projects",
       "id": "meiliadmin",
       "attributes": {
         "html": "<p>Admin panel for the search engine <a href='https://www.meilisearch.com/' target='_blank'>meilisearch</a></p>",
