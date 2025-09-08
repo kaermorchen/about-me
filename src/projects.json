@@ -2,6 +2,27 @@
   "data": [
     {
       "type": "projects",
+      "id": "ember-mdi",
+      "attributes": {
+        "html": "<p>An ember-cli addon for using Material Design Icons in Ember applications</p>",
+        "name": "Ember Material Design Icons",
+        "type": "DevTools",
+        "createdAt": "2017-09-16T00:00:00.000Z",
+        "client": "GitHub",
+        "clientUrl": "https://kaermorchen.github.io/ember-mdi/",
+        "logo": "/assets/images/projects/ember-mdi_logo.png",
+        "screenshots": [
+          {
+            "src": "/assets/images/projects/ember-mdi_logo.png",
+            "w": 1915,
+            "h": 1173
+          }
+        ],
+        "tags": ["DevTools", "Ember.js"]
+      }
+    },
+    {
+      "type": "projects",
       "id": "vscode-drupal",
       "attributes": {
         "html": "<p>This extension supports Drupal projects in VSCode code editor</p>",
