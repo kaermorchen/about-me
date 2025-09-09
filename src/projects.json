@@ -2,6 +2,32 @@
   "data": [
     {
       "type": "projects",
+      "id": "vscode-twig",
+      "attributes": {
+        "html": "<p>Twig Language Server and VSCode extension Modern Twig</p>",
+        "name": "Modern Twig",
+        "type": "DevTools",
+        "createdAt": "2023-06-06T00:00:00.000Z",
+        "client": "GitHub",
+        "clientUrl": "https://marketplace.visualstudio.com/items?itemName=Stanislav.vscode-twig",
+        "logo": "/assets/images/projects/vscode-twig_logo.png",
+        "screenshots": [
+          {
+            "src": "/assets/images/projects/vscode-twig_01.png",
+            "w": 1040,
+            "h": 1123
+          },
+          {
+            "src": "/assets/images/projects/vscode-twig_02.png",
+            "w": 1168,
+            "h": 720
+          }
+        ],
+        "tags": ["DevTools", "PHP", "Twig", "Node.js"]
+      }
+    },
+    {
+      "type": "projects",
       "id": "ember-mdi",
       "attributes": {
         "html": "<p>An ember-cli addon for using Material Design Icons in Ember applications</p>",
