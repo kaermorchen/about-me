@@ -2,6 +2,27 @@
   "data": [
     {
       "type": "projects",
+      "id": "tree-sitter-explorer",
+      "attributes": {
+        "html": "<p>This app is a playground for tree-sitter parsers. It uses wasm builds of the parsers.</p>",
+        "name": "Tree-sitter Explorer",
+        "type": "DevTools",
+        "createdAt": "2023-08-11T00:00:00.000Z",
+        "client": "GitHub",
+        "clientUrl": "https://kaermorchen.github.io/tree-sitter-explorer/",
+        "logo": "/assets/images/projects/tree-sitter-explorer_logo.png",
+        "screenshots": [
+          {
+            "src": "/assets/images/projects/tree-sitter-explorer_logo.png",
+            "w": 1915,
+            "h": 1276
+          }
+        ],
+        "tags": ["DevTools", "SPA"]
+      }
+    },
+    {
+      "type": "projects",
       "id": "vscode-twig",
       "attributes": {
         "html": "<p>Twig Language Server and VSCode extension Modern Twig</p>",
